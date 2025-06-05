@@ -13,11 +13,43 @@
 
   <div id="nav-container"></div>
 
-  <main class="p-8">
-    <h1 class="text-3xl font-bold mb-4">Tere tulemast shoppi!</h1>
-    <p>shop</p>
-  </main>
+   <div class="bg-[#a0522d] text-white px-8 py-10 text-left">
+    <h1 class="text-4xl font-bold mb-2">Meie E-pood</h1>
+    <p>Avasta meie valik unikaalseid tooteid!</p>
+  </div>
 
+<div class="flex justify-between items-center px-8 py-6 border-b flex-wrap gap-4">
+    <div class="flex space-x-4 overflow-x-auto">
+      <button class="text-gray-700 hover:underline">Kõik</button>
+      <button class="text-gray-700 hover:underline">Mööbel</button>
+      <button class="text-gray-700 hover:underline">Valgustid</button>
+      <button class="text-gray-700 hover:underline">Dekoratsioonid</button>
+      <button class="text-gray-700 hover:underline">Tekstiil</button>
+    </div>
+    <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">
+      Filtreeri
+    </button>
+  </div>
+
+  <!-- Tootevõrgustik -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8">
+    <!-- Tootekaart (koopiat 12 korda või dünaamiliselt JavaScriptiga) -->
+    <div class="relative border rounded-lg overflow-hidden shadow-sm">
+      <!-- Kategooria link -->
+      <a href="/kategooria/moobel" class="absolute top-2 left-2 bg-black bg-opacity-60 text-white text-sm px-3 py-1 rounded underline">
+        Mööbel
+      </a>
+      <!-- Pilt -->
+      <img src="https://via.placeholder.com/300x200" alt="Toode" class="w-full h-48 object-cover">
+      <!-- Tekst -->
+      <div class="p-4">
+        <h3 class="text-lg font-semibold">Toode 1</h3>
+        <p class="text-sm text-gray-600 mb-2">Lühikirjeldus tootest</p>
+        <div class="text-lg font-bold">49 €</div>
+      </div>
+    </div>
+    <!-- Korruta see HTML 11x veel või loo JavaScriptiga -->
+  </div>
   <!-- Footer konteiner -->
   <div id="footer-container"></div>
 

@@ -14,10 +14,86 @@
   <!-- Nav konteiner -->
   <div id="nav-container"></div>
 
-  <main class="p-8">
-    <h1 class="text-3xl font-bold mb-4">deetails</h1>
-    <p>details.</p>
-  </main>
+    
+<div class="bg-[#a0522d] text-white px-4 py-4 flex items-center">
+    <a href="javascript:history.back()" class="text-white mr-4 text-2xl">&#8592;</a>
+    <h1 class="text-xl font-semibold">Toote info</h1>
+  </div>
+  
+   <div class="p-8 grid md:grid-cols-2 gap-8">
+    <!-- Vasak pool: pildid -->
+    <div class="flex gap-4">
+      <div class="flex flex-col gap-4">
+        <img src="https://via.placeholder.com/100x100" alt="Pilt väike 1" class="w-24 h-24 object-cover border" />
+        <img src="https://via.placeholder.com/100x100" alt="Pilt väike 2" class="w-24 h-24 object-cover border" />
+      </div>
+      <img src="https://via.placeholder.com/400x400" alt="Peapilt" class="w-full max-w-md h-auto object-cover border" />
+    </div>
+
+    <!-- Parem pool: info -->
+    <div class="flex flex-col space-y-4">
+      <h2 class="text-2xl font-bold">Toote nimi</h2>
+      <p class="text-xl font-semibold text-green-600">59 €</p>
+      <p class="text-gray-600">See on üks hea toode, mis sobib igale poole.</p>
+
+      <!-- Suurus -->
+      <div>
+        <label for="size" class="block text-sm font-medium mb-1">Suurus</label>
+        <select id="size" class="border rounded w-full px-3 py-2">
+          <option>Vali suurus</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+      </div>
+
+      <!-- Kogus -->
+      <div>
+        <label for="quantity" class="block text-sm font-medium mb-1">Kogus</label>
+        <select id="quantity" class="border rounded w-full px-3 py-2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+
+      <button class="bg-[#a0522d] text-white px-4 py-2 rounded mt-4 w-fit">Lisa ostukorvi</button>
+    </div>
+  </div>
+
+  <!-- Akordionid -->
+  <div class="px-8 pb-12">
+    <div class="border-b">
+      <button
+        onclick="toggleAccordion('kirjeldus')"
+        class="w-full text-left py-4 text-lg font-medium flex justify-between items-center"
+      >
+        Kirjeldus <span>&#9662;</span>
+      </button>
+      <div id="kirjeldus" class="hidden pb-4 text-gray-600">
+        Siin on põhjalik kirjeldus tootest.
+      </div>
+    </div>
+
+    <div class="border-b">
+      <button
+        onclick="toggleAccordion('detailid')"
+        class="w-full text-left py-4 text-lg font-medium flex justify-between items-center"
+      >
+        Detailid & lisainfo <span>&#9662;</span>
+      </button>
+      <div id="detailid" class="hidden pb-4 text-gray-600">
+        Materjalid, mõõdud, hooldusinfo jne.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAccordion(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle("hidden");
+    }
+  </script>
 
   <!-- Footer konteiner -->
   <div id="footer-container"></div>

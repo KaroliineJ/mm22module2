@@ -13,11 +13,50 @@
 
   <div id="nav-container"></div>
 
-  <main class="p-8">
-    <h1 class="text-3xl font-bold mb-4">Tere tulemast kontaktlehele!</h1>
-    <p>Siin on Kontakt sisu.</p>
-  </main>
+  <div class="bg-[#a0522d] text-white px-4 py-10 text-left">
+    <h1 class="text-3xl font-bold mb-2">Võta meiega ühendust</h1>
+    <p>Oleme valmis sind aitama – kirjuta meile julgelt!</p>
+  </div>
 
+  <!-- Kontaktinfo ja vorm -->
+  <div class="grid md:grid-cols-2 gap-12 px-8 py-12 max-w-6xl mx-auto">
+    
+    <!-- Vasak pool: kontaktinfo -->
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-xl font-semibold mb-2">Kontaktandmed</h2>
+        <p><strong>Aadress:</strong> Näidistee 12, Tallinn</p>
+        <p><strong>Telefon:</strong> <a href="tel:+3725555555" class="text-blue-600 hover:underline">+372 5555 5555</a></p>
+        <p><strong>E-post:</strong> <a href="mailto:info@shop.ee" class="text-blue-600 hover:underline">info@shop.ee</a></p>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold mb-2">Lahtiolekuajad</h2>
+        <p>E–R: 10:00 – 18:00</p>
+        <p>L: 11:00 – 15:00</p>
+        <p>P: suletud</p>
+      </div>
+    </div>
+
+    <!-- Parem pool: kontaktivorm -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Saada meile sõnum</h2>
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">Nimi</label>
+          <input type="text" id="name" name="name" required class="w-full border rounded px-3 py-2" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1">E-post</label>
+          <input type="email" id="email" name="email" required class="w-full border rounded px-3 py-2" />
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1">Sõnum</label>
+          <textarea id="message" name="message" rows="5" required class="w-full border rounded px-3 py-2"></textarea>
+        </div>
+        <button type="submit" class="bg-[#a0522d] text-white px-5 py-2 rounded hover:bg-[#8b4513]">Saada</button>
+      </form>
+    </div>
+  </div>
   <div id="footer-container"></div>
 
   <script src="js/include.js"></script>

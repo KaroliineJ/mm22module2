@@ -1,10 +1,27 @@
-<nav class="bg-white shadow p-4 flex justify-between items-center">
-  <a href="index.html" class="text-lg font-bold">Adavere Tuulik</a>
-  <div class="space-x-4">
-    <a href="index.html" class="text-gray-700 hover:text-black">Avaleht</a>
-    <a href="shop.html" class="text-gray-700 hover:text-black">E-pood</a>
-    <a href="contact.html" class="text-gray-700 hover:text-black">Kontakt</a>
-    <a href="donate.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Anneta</a>
-    <a href="cart.html" class="ml-2">🛒</a>
+<nav class="bg-white shadow py-4 px-4 md:px-[160px]">
+  <div class="flex flex-col md:grid md:grid-cols-12 md:gap-[20px] md:items-center">
+
+    <!-- Logo -->
+    <div class="mb-4 md:mb-0 md:col-span-2">
+      <a href="/" class="inline-block">
+        <img src="/assets/Asset 6.png"  alt="Adavere Tuulik logo" class="h-10 w-auto md:h-14">
+      </a>
+    </div>
+
+    <!-- Nav lingid -->
+    <div class="flex justify-center space-x-4 md:space-x-6 font-medium md:col-span-6">
+      <a href="index.html" class="text-gray-700 hover:underline">Avaleht</a>
+      <a href="shop.html" class="text-gray-700 hover:underline">E-pood</a>
+      <a href="contact.html" class="text-gray-700 hover:underline">Kontakt</a>
+    </div>
+
+    <!-- Toeta + ostukorv -->
+    <div class="flex justify-center md:justify-end items-center space-x-4 md:col-span-4">
+      <a href="donate.html" class="px-4 py-2 border border-[#a0522d] text-[#a0522d] font-semibold hover:bg-[#a0522d] hover:text-white transition rounded-none text-sm md:text-base">
+        Toeta
+      </a>
+      <a href="cart.html" class="text-2xl" title="Ostukorv">🛒</a>
+    </div>
+
   </div>
 </nav>

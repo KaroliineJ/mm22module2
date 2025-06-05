@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Avaleht</title>
 
-  
   <script src="https://cdn.tailwindcss.com"></script>
 
-  
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -16,90 +14,159 @@
   <!-- Nav konteiner -->
   <div id="nav-container"></div>
 
-  <section class="bg-cover bg-center bg-no-repeat text-white py-24 px-6" style="background-image: url('assets/tuulik.jpg');">
-  <div class="max-w-4xl mx-auto">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Adavere Tuulik – Ajaloo jõul tiivul</h1>
-    <p class="text-lg md:text-xl mb-6">Avatud kevadest sügiseni. Tuurid, käsitöö, elamus.</p>
-    <a href="contact.html#booking" class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded transition">Vaata ajakava</a>
-  </div>
-</section>
-<section class="bg-[#F3ECE4] py-20 px-6">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">Meie tuuliku ajalugu</h2>
-    <p class="mb-8 text-lg">Adavere tuulik on üks Eesti vanimaid tuulikuid, mille juured ulatuvad 19. sajandisse. See on olnud nii veski kui kogukonnakeskus.</p>
+  <!-- Uus hero sektsioon -->
+  <section
+    class="relative bg-cover bg-center bg-no-repeat h-[80vh]"
+    style="background-image: url('assets/hero.jpg');"
+  >
+    <!-- Tume kate taustapildi peal -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Sisu grid -->
+    <div class="relative max-w-7xl mx-auto h-full grid grid-cols-12 items-center px-6 md:px-160">
+
     
-    <div class="flex flex-col md:flex-row justify-around items-center gap-8">
-      <div class="text-center">
-        <p class="text-2xl font-semibold">1815</p>
-        <p class="text-sm">Esmamainimine</p>
+      <!-- Tekst + nupp vasakul keskel -->
+      <div class="col-span-12 md:col-span-5 text-white z-10">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+          Adavere Tuulik – Ajaloo jõul tiivul
+        </h1>
+        <p class="text-lg md:text-xl mb-6 drop-shadow-md">
+          Avatud kevadest sügiseni. Tuurid, käsitöö, elamus.
+        </p>
+        <a
+          href="contact.html#booking"
+          class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded transition shadow-lg"
+          >Vaata ajakava</a
+        >
       </div>
-      <div class="text-center">
-        <p class="text-2xl font-semibold">1930</p>
-        <p class="text-sm">Meierei kõrval veski</p>
-      </div>
-      <div class="text-center">
-        <p class="text-2xl font-semibold">2020</p>
-        <p class="text-sm">Kogukonna toel renoveeritud</p>
+
+      <!-- Paremal tühjus või lisa sisu soovi korral -->
+
+    </div>
+  </section>
+
+  <section class="bg-[#281900] py-40 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Meie tuuliku ajalugu</h2>
+      <p class="mb-8 text-lg">Adavere tuulik on üks Eesti vanimaid tuulikuid, mille juured ulatuvad 19. sajandisse. See on olnud nii veski kui kogukonnakeskus.</p>
+
+      <div class="flex flex-col md:flex-row justify-around items-center gap-8">
+        <div class="text-center">
+          <p class="text-2xl font-semibold">1815</p>
+          <p class="text-sm">Esmamainimine</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl font-semibold">1930</p>
+          <p class="text-sm">Meierei kõrval veski</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl font-semibold">2020</p>
+          <p class="text-sm">Kogukonna toel renoveeritud</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="py-20 px-6 bg-white">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-10">Meie veski legendid</h2>
-    
-    <div class="grid md:grid-cols-3 gap-8 text-left">
-      <div class="border p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">Veski-Mati</h3>
-        <p>Vana mölder, kes teadis iga vilja häält.</p>
+  </section>
+
+<section class="bg-[#F8F6EE] py-20 px-6 ">
+  <div class="max-w-6xl mx-auto text-left">
+    <h2 class="text-3xl font-bold mb-10 text-[#1a1a1a]">Meie veski legendid</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Legend 1 -->
+      <div>
+        <img src="assets/legend1.jpg" alt="Veski-Mati" class="w-full  object-cover mb-4 rounded">
+        <h3 class="text-xl font-semibold mb-1 text-[#1a1a1a]">Veski-Mati</h3>
+        <p class="text-[#1a1a1a]">Vana mölder, kes teadis iga vilja häält.</p>
       </div>
-      <div class="border p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">Anna Leivakott</h3>
-        <p>Kohalik leivaküpsetaja, kes kasutas ainult Adavere veskijahu.</p>
+
+      <!-- Legend 2 -->
+      <div>
+        <img src="assets/anna.png" alt="Anna Leivakott" class="w-full  object-cover mb-4 rounded">
+        <h3 class="text-xl font-semibold mb-1 text-[#1a1a1a]">Anna Leivakott</h3>
+        <p class="text-gray-700">Kohalik leivaküpsetaja, kes kasutas ainult Adavere veskijahu.</p>
       </div>
-      <div class="border p-6 rounded shadow">
-        <h3 class="text-xl font-semibold mb-2">Tuulivana</h3>
-        <p>Folkloorne kuju, kes keerutas tiivikuid isegi tormita.</p>
+
+      <!-- Legend 3 -->
+      <div>
+        <img src="assets/tuuli.png" alt="Tuulivana" class="w-full  object-cover mb-4 rounded">
+        <h3 class="text-xl font-semibold mb-1 text-[#1a1a1a]">Tuulivana</h3>
+        <p class="text-gray-700">Folkloorne kuju, kes keerutas tiivikuid isegi tormita.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="py-20 px-6 bg-[#EFECE6]">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-6">Ekskursioonid ja töötoad</h2>
-    <ul class="text-lg space-y-4 text-left max-w-md mx-auto">
-      <li>📍 L–P kell 12:00 ja 15:00 – Giidiga tuur</li>
-      <li>🍞 L kell 11:00 – Leivaküpsetuse töötuba</li>
-      <li>⚙️ P kell 14:00 – Mehhanismide demo</li>
-      <li>👨‍🏫 Kooligruppidele eriajakava kokkuleppel</li>
-    </ul>
-  </div>
-</section>
-
-<section class="py-20 px-6 bg-white">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-6">Populaarsed meened</h2>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div class="border p-4 rounded shadow">
-        <img src="assets/toode1.jpg" alt="Meene 1" class="mb-4 w-full h-48 object-cover rounded">
-        <h3 class="text-xl font-semibold">Tiiviku võtmehoidja</h3>
-        <p class="text-gray-600">12 €</p>
-      </div>
-      <div class="border p-4 rounded shadow">
-        <img src="assets/toode2.jpg" alt="Meene 2" class="mb-4 w-full h-48 object-cover rounded">
-        <h3 class="text-xl font-semibold">Veskimagnet 1815</h3>
-        <p class="text-gray-600">8 €</p>
-      </div>
-      <div class="border p-4 rounded shadow">
-        <img src="assets/toode3.jpg" alt="Meene 3" class="mb-4 w-full h-48 object-cover rounded">
-        <h3 class="text-xl font-semibold">Käsitöö rätik</h3>
-        <p class="text-gray-600">15 €</p>
-      </div>
+ <section class="py-20 px-6 bg-[#281900] text-[#F8F6EE]">
+  <div class="max-w-7xl mx-auto grid grid-cols-12 gap-6">
+    <div class="col-span-12 md:col-span-6">
+      <h2 class="text-3xl font-bold mb-6">Ekskursioonid ja töötoad</h2>
+      <ul class="text-lg space-y-4">
+        <li>L–P kell 12:00 ja 15:00 – Giidiga tuur</li>
+        <li>L kell 11:00 – Leivaküpsetuse töötuba</li>
+        <li>P kell 14:00 – Mehhanismide demo</li>
+        <li>Kooligruppidele eriajakava kokkuleppel</li>
+      </ul>
     </div>
   </div>
 </section>
+
+
+ <section class="py-20 px-6 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-left">Populaarsed meened</h2>
+
+    <div class="relative">
+      <!-- Slider -->
+      <div id="slider" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-8 pb-4">
+        <!-- Toode 1 -->
+        <div class="flex-shrink-0 w-72 snap-start">
+          <img src="assets/toode1.jpg" alt="Meene 1" class="mb-4 w-full h-64 object-cover rounded" />
+          <h3 class="text-xl font-semibold">Tiiviku võtmehoidja</h3>
+          <p class="text-gray-700">12 €</p>
+        </div>
+        <!-- Toode 2 -->
+        <div class="flex-shrink-0 w-72 snap-start">
+          <img src="assets/toode2.jpg" alt="Meene 2" class="mb-4 w-full h-64 object-cover rounded" />
+          <h3 class="text-xl font-semibold">Veskimagnet 1815</h3>
+          <p class="text-gray-700">8 €</p>
+        </div>
+        <!-- Toode 3 -->
+        <div class="flex-shrink-0 w-72 snap-start">
+          <img src="assets/toode3.jpg" alt="Meene 3" class="mb-4 w-full h-64 object-cover rounded" />
+          <h3 class="text-xl font-semibold">Käsitöö rätik</h3>
+          <p class="text-gray-700">15 €</p>
+        </div>
+        <!-- Lisa veel vajadusel -->
+      </div>
+
+      <!-- Vasak nool -->
+      <button onclick="slideLeft()" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white text-black border border-gray-300 hover:bg-gray-200 rounded-full w-12 h-12 flex items-center justify-center shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Parem nool -->
+      <button onclick="slideRight()" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white text-black border border-gray-300 hover:bg-gray-200 rounded-full w-12 h-12 flex items-center justify-center shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  function slideLeft() {
+    document.getElementById('slider').scrollBy({ left: -300, behavior: 'smooth' });
+  }
+
+  function slideRight() {
+    document.getElementById('slider').scrollBy({ left: 300, behavior: 'smooth' });
+  }
+</script>
+
 
 
   <!-- Footer konteiner -->
