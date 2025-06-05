@@ -23,7 +23,8 @@
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
     <!-- Sisu grid -->
-    <div class="relative max-w-7xl mx-auto h-full grid grid-cols-12 items-center px-6 md:px-160">
+   <div class="relative grid grid-cols-12 items-center h-full px-4 md:px-[160px]">
+
 
     
       <!-- Tekst + nupp vasakul keskel -->
@@ -46,56 +47,86 @@
     </div>
   </section>
 
-  <section class="bg-[#281900] py-40 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Meie tuuliku ajalugu</h2>
-      <p class="mb-8 text-lg">Adavere tuulik on üks Eesti vanimaid tuulikuid, mille juured ulatuvad 19. sajandisse. See on olnud nii veski kui kogukonnakeskus.</p>
+<section class="bg-[#281900] text-white py-32 px-6">
+  <!-- Pealkiri ja kirjeldus -->
+  <div class="max-w-3xl mx-auto text-center mb-24">
+    <h2 class="text-3xl font-semibold mb-4">Meie tuuliku ajalugu</h2>
+    <p class="text-sm md:text-base text-gray-300 leading-relaxed">
+      Adavere tuulik on üks Eesti vanimaid tuulikuid, mille ajalugu ulatub 19. sajandisse.
+      Aastate jooksul on see olnud nii jahiveski, kohtumispaik kui ka kultuuri kandja.
+      Täna on tuulik taastatud ning ootab külalisi avastama selle kivide vahele peidetud lugusid.
+    </p>
+  </div>
 
-      <div class="flex flex-col md:flex-row justify-around items-center gap-8">
-        <div class="text-center">
-          <p class="text-2xl font-semibold">1815</p>
+  <!-- Ajaloo joon -->
+  <div class="relative max-w-5xl mx-auto h-32">
+    <!-- Horisontaalne joon -->
+    <div class="absolute top-1/2 w-full border-t border-gray-400 z-0"></div>
+
+    <!-- 3 markerit -->
+    <div class="flex justify-between items-start relative z-10 h-full">
+      <!-- Punkt 1 -->
+      <div class="flex flex-col items-center">
+        <!-- Ülemine tekst -->
+        <div class="mb-4 text-center">
+          <p class="text-sm font-semibold">1815 –</p>
           <p class="text-sm">Esmamainimine</p>
         </div>
-        <div class="text-center">
-          <p class="text-2xl font-semibold">1930</p>
-          <p class="text-sm">Meierei kõrval veski</p>
+        <!-- Väike vertikaalne kriips -->
+        <div class="w-px h-6 bg-gray-400"></div>
+      </div>
+
+      <!-- Punkt 2 -->
+      <div class="flex flex-col items-center">
+        <div class="mb-4 text-center">
+          <p class="text-sm font-semibold">1930 –</p>
+          <p class="text-sm">Meierei kõrval</p>
         </div>
-        <div class="text-center">
-          <p class="text-2xl font-semibold">2020</p>
-          <p class="text-sm">Kogukonna toel renoveeritud</p>
+        <div class="w-px h-6 bg-gray-400"></div>
+      </div>
+
+      <!-- Punkt 3 -->
+      <div class="flex flex-col items-center">
+        <div class="mb-4 text-center">
+          <p class="text-sm font-semibold">2020 –</p>
+          <p class="text-sm">Renoveerimine</p>
         </div>
+        <div class="w-px h-6 bg-gray-400"></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-<section class="bg-[#F8F6EE] py-20 px-6 ">
+
+<section class="bg-[#F8F6EE] py-20 px-4 md:px-[160px]">
   <div class="max-w-6xl mx-auto text-left">
     <h2 class="text-3xl font-bold mb-10 text-[#1a1a1a]">Meie veski legendid</h2>
 
     <div class="grid md:grid-cols-3 gap-8">
       <!-- Legend 1 -->
       <div>
-        <img src="assets/legend1.jpg" alt="Veski-Mati" class="w-full  object-cover mb-4 rounded">
+        <img src="assets/veski.png" alt="Veski-Mati" class="w-full object-cover mb-4 rounded">
         <h3 class="text-xl font-semibold mb-1 text-[#1a1a1a]">Veski-Mati</h3>
         <p class="text-[#1a1a1a]">Vana mölder, kes teadis iga vilja häält.</p>
       </div>
 
       <!-- Legend 2 -->
       <div>
-        <img src="assets/anna.png" alt="Anna Leivakott" class="w-full  object-cover mb-4 rounded">
+        <img src="assets/anna.png" alt="Anna Leivakott" class="w-full object-cover mb-4 rounded">
         <h3 class="text-xl font-semibold mb-1 text-[#1a1a1a]">Anna Leivakott</h3>
         <p class="text-gray-700">Kohalik leivaküpsetaja, kes kasutas ainult Adavere veskijahu.</p>
       </div>
 
       <!-- Legend 3 -->
       <div>
-        <img src="assets/tuuli.png" alt="Tuulivana" class="w-full  object-cover mb-4 rounded">
+        <img src="assets/tuuli.png" alt="Tuulivana" class="w-full object-cover mb-4 rounded">
         <h3 class="text-xl font-semibold mb-1 text-[#1a1a1a]">Tuulivana</h3>
         <p class="text-gray-700">Folkloorne kuju, kes keerutas tiivikuid isegi tormita.</p>
       </div>
     </div>
   </div>
 </section>
+
 
  <section class="py-20 px-6 bg-[#281900] text-[#F8F6EE]">
   <div class="max-w-7xl mx-auto grid grid-cols-12 gap-6">
@@ -114,7 +145,7 @@
 
  <section class="py-20 px-6 bg-white">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold mb-10 text-left">Populaarsed meened</h2>
+    <h2 class="text-3xl font-bold mb-10 text-left ">Meie meened</h2>
 
     <div class="relative">
       <!-- Slider -->
@@ -122,20 +153,20 @@
         <!-- Toode 1 -->
         <div class="flex-shrink-0 w-72 snap-start">
           <img src="assets/toode1.jpg" alt="Meene 1" class="mb-4 w-full h-64 object-cover rounded" />
-          <h3 class="text-xl font-semibold">Tiiviku võtmehoidja</h3>
-          <p class="text-gray-700">12 €</p>
+          <h3 class="text-xl font-semibold text-[#1a1a1a]">Tiiviku võtmehoidja</h3>
+          <p class="text-[#1a1a1a]">12 €</p>
         </div>
         <!-- Toode 2 -->
         <div class="flex-shrink-0 w-72 snap-start">
-          <img src="assets/toode2.jpg" alt="Meene 2" class="mb-4 w-full h-64 object-cover rounded" />
-          <h3 class="text-xl font-semibold">Veskimagnet 1815</h3>
-          <p class="text-gray-700">8 €</p>
+          <img src="assets/toode2.PNG" alt="Meene 2" class="mb-4 w-full h-64 object-cover rounded" />
+          <h3 class="text-xl font-semibold text-[#1a1a1a]">Veskimagnet 1815</h3>
+          <p class="text-[#1a1a1a]">8 €</p>
         </div>
         <!-- Toode 3 -->
         <div class="flex-shrink-0 w-72 snap-start">
-          <img src="assets/toode3.jpg" alt="Meene 3" class="mb-4 w-full h-64 object-cover rounded" />
-          <h3 class="text-xl font-semibold">Käsitöö rätik</h3>
-          <p class="text-gray-700">15 €</p>
+          <img src="assets/toode3.PNG" alt="Meene 3" class="mb-4 w-full h-64 object-cover rounded" />
+          <h3 class="text-xl font-semibold text-[#1a1a1a]">Käsitöö rätik</h3>
+          <p class="text-[#1a1a1a]">15 €</p>
         </div>
         <!-- Lisa veel vajadusel -->
       </div>
