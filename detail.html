@@ -12,22 +12,21 @@
   <!-- Nav -->
   <div id="nav-container"></div>
 
-  <!-- Tagasi nupp ja tume riba -->
-  <div class="bg-[#2a1906] text-white px-4 py-4">
-    <a href="javascript:history.back()" class="text-white text-2xl">&#8592;</a>
+  
+  <div class="bg-[#281900] text-white px-4 md:px-[160px] py-10 text-left">
+          <a href="javascript:history.back()" class="text-white text-3xl">&#8592;</a>
   </div>
 
   <!-- Peasisu -->
   <main class="max-w-7xl mx-auto px-4 md:px-20 py-16 grid md:grid-cols-2 gap-16">
 
     <!-- Vasak pool: pildid -->
-    <div class="grid grid-cols-5 gap-6">
-      <div class="col-span-1 flex flex-col gap-4">
-        <img src="assets/toode1selg.jpg" alt="Tagant" class="w-full aspect-[1/1.2] object-cover border" />
-        <img src="assets/toode1plt.PNG" alt="Eest" class="w-full aspect-[1/1.2] object-cover border" />
-        <img src="assets/toode1.jpg" alt="Logo" class="w-full aspect-[1/1.2] object-cover border" />
+    <div class="flex gap-6 items-start">
+      <div class="flex flex-col gap-4 w-24">
+        <img src="assets/toode1selg.jpg" alt="Tagant" class="w-full aspect-square object-cover border" />
+        <img src="assets/toode1plt.PNG" alt="Eest" class="w-full aspect-square object-cover border" />
       </div>
-      <div class="col-span-4">
+      <div class="flex-1 max-w-xl">
         <img src="assets/toode1.jpg" alt="Peapilt" class="w-full aspect-square object-cover border" />
       </div>
     </div>
@@ -66,7 +65,7 @@
   </main>
 
   <!-- Akordionid -->
-  <section class="max-w-6xl mx-auto px-4 md:px-20 pb-20">
+  <section class="max-w-6xl mx-auto px-4 md:px-[160px] pb-20">
     <div class="border-b">
       <button onclick="toggleAccordion('kirjeldus')" class="w-full py-4 text-left text-sm font-semibold flex justify-between items-center">
         Kirjeldus <span>+</span>
