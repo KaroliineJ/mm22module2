@@ -8,6 +8,39 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll("button");
+    const cards = document.querySelectorAll(".group");
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filter = btn.textContent.trim();
+        cards.forEach(card => {
+          const category = card.querySelector("span").textContent.trim();
+          if (filter === "Kõik" || category === filter) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    // Ava detailleht kui klikitakse tootenimele
+    cards.forEach(card => {
+      const title = card.querySelector("h3");
+      title.style.cursor = "pointer";
+      title.addEventListener("click", () => {
+        const name = title.textContent.trim();
+        const urlName = encodeURIComponent(name);
+        window.location.href = `detail.html?name=${urlName}`;
+      });
+    });
+  });
+</script>
+
 </head>
 <body>
 
